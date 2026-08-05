@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharanidharan S | Cybersecurity &amp; Cloud Security Student</title>
+    <meta name="description"
+        content="Portfolio of Bharanidharan S, a Computer Science Engineering (Cybersecurity) student researching software supply-chain security and building practical penetration testing fundamentals — seeking cybersecurity and cloud internships, and pursuing graduate study in cybersecurity abroad.">
+    <!-- Google Fonts: Outfit for Heading & Brutalist look, Fira Code for Terminal/Cyber vibes, Playfair Display for Hero text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- Favicon / Google Tab Logo -->
+    <link rel="icon" type="image/png" href="assets/images/branding/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/branding/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/branding/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="brutalist-theme">
+
+    <!-- Top Reading Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+
+    <!-- Ambient Background Motion Particles & Blurring Orbs -->
+    <div class="ambient-bg-wrapper" aria-hidden="true">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+        <div class="floating-cyber-grid"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="cyber-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <a href="#home" class="logo-text" id="logoFuzzyLink" aria-label="Breaking to Protect Home">
+                    <canvas id="fuzzyLogoCanvas"></canvas>
+                </a>
+            </div>
+            <div class="header-nav-spacer"></div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="cyber-nav" id="cyberNav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#labs" class="nav-link">Labs</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#certs" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Fold 1: Hero Section -->
+        <section id="home" class="hero-section scroll-spy">
+
+            <!-- Right Side Wave Background (SVG separation) with ClipPath Pattern -->
+            <div class="hero-wave-bg">
+                <svg viewBox="0 0 100 100" preserveAspectRatio="none"
+                    style="width: 100%; height: 100%; display: block;">
+                    <defs>
+                        <clipPath id="waveClip" clipPathUnits="objectBoundingBox">
+                            <path
+                                d="M 0.45,0 C 0.35,0.25 0.15,0.45 0.35,0.70 C 0.48,0.87 0.35,0.95 0.20,1 L 1,1 L 1,0 Z" />
+                        </clipPath>
+                    </defs>
+                    <path d="M 45,0 C 35,25 15,45 35,70 C 48,87 35,95 20,100 L 100,100 L 100,0 Z"
+                        fill="var(--accent)" />
+                </svg>
+                <div class="hero-wave-pattern"></div>
+            </div>
+
+            <!-- Corner overlapping circles -->
+            <div class="decor-corner-circles">
+                <span class="circle-item yellow-item"></span>
+                <span class="circle-item dark-item"></span>
+            </div>
+
+            <div class="hero-container-new">
+                <!-- Left Side Details -->
+                <div class="hero-info-new">
+                    <h1 class="hero-title-new">Bharanidharan S</h1>
+                    <div class="why-me-container">
+                        <h2 class="why-me-heading">Why Me?</h2>
+                        <p class="why-me-text">
+                            I'm a Computer Science (Cybersecurity) student researching how <span class="keyword-cyber">signed artifacts, SBOMs, and build provenance</span> can verify software supply-chain integrity — while building toward <span class="keyword-cyber">cybersecurity and cloud internships</span>, and a <span class="keyword-cyber">Master's in cybersecurity abroad</span>.
+                        </p>
+                    </div>
+                    <div class="hero-cta-new">
+                        <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                        <button class="btn btn-secondary" data-doc="assets/docs/resume.pdf" data-doc-title="Resume – Bharanidharan S" data-doc-type="pdf">View Resume</button>
+                    </div>
+                    <!-- Social Links -->
+                    <div class="hero-social-links">
+                        <a href="mailto:bharanibd2007@gmail.com" class="hero-social-icon" aria-label="Email">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/bharanidharan-s-4458b5326" target="_blank"
+                            rel="noopener noreferrer" class="hero-social-icon" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/bharanx" target="_blank" rel="noopener noreferrer"
+                            class="hero-social-icon" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Side Image Area -->
+                <div class="hero-image-area-new">
+                    <div class="hero-avatar-wrapper-new">
+                        <img src="assets/images/profile/profile.png" alt="Bharanidharan S" class="avatar-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Separator 1: About -->
+        <div class="brutalist-separator">
+            <span>About</span>
+            <div class="arrow-circle" aria-hidden="true">&rarr;</div>
+        </div>
+
+        <!-- Fold 2: About & Profile Section -->
+        <section id="about" class="about-section scroll-spy">
+
+            <div class="section-container about-grid">
+                <!-- Left Sidebar: Profile photo -->
+                <div class="about-sidebar">
+                    <div class="sidebar-avatar-frame">
+                        <div class="avatar-offset-yellow"></div>
+                        <div class="avatar-card">
+                            <img src="assets/images/profile/about_profile.jpg" alt="Bharanidharan S" class="avatar-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column Details -->
+                <div class="about-details">
+                    <div class="details-hello-box">
+                        <span class="quote-mark">“</span>
+                        <h2>My Mindset.</h2>
+                        <p class="about-text-p">
+                            My approach starts with fundamentals — TryHackMe, picoCTF — and is moving toward research: a testable question, a real threat model, and reproducible results, not just a working demo. Right now that's <strong>ChainProof</strong>: testing which combinations of code signatures, SBOMs, and reproducible builds actually catch tampering in a software supply chain, versus which ones just look secure.
+                        </p>
+                        <p class="about-text-p" style="margin-top: 1rem;">
+                            It's early — no results yet, and I'll add real output as the project develops.
+                        </p>
+                    </div>
+
+                    <!-- Editorial Academic & Future Trajectory Section -->
+                    <div class="editorial-credentials">
+                        <!-- Quiet, Factual Education -->
+                        <div class="editorial-edu-block scroll-reveal-editorial">
+                            <div class="editorial-next-header">
+                                <span class="editorial-next-tag">EDUCATION</span>
+                            </div>
+                            <div class="editorial-edu-content">
+                                <h3 class="editorial-degree">B.E. Computer Science Engineering (Cyber Security)</h3>
+                                <p class="editorial-institution">Sri Sairam Institute of Technology, Chennai</p>
+                                <span class="editorial-period">2024 — 2028</span>
+                            </div>
+                        </div>
+
+                        <!-- Subtle Focal Highlight: NEXT -->
+                        <div class="editorial-next-block scroll-reveal-editorial" style="transition-delay: 0.2s;">
+                            <div class="editorial-next-header">
+                                <span class="editorial-next-tag">NEXT</span>
+                            </div>
+                            <div class="editorial-next-content">
+                                <h3 class="editorial-next-title">Master's in Cybersecurity / Computer Science</h3>
+                                <p class="editorial-next-location">Abroad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Separator 2: Projects -->
+        <div class="brutalist-separator">
+            <span>Featured Projects</span>
+            <div class="arrow-circle" aria-hidden="true">&rarr;</div>
+        </div>
+
+        <!-- Fold 3: Projects Showcase Gallery -->
+        <section id="projects" class="projects-section scroll-spy">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="cyber-tag">⚡ SHOWCASE GALLERY</span>
+                    <h2>Featured Projects</h2>
+                    <p class="subtitle">A showcase of secure software developments, intrusion detection systems, and
+                        network scanning tools.</p>
+                </div>
+
+                <div class="projects-exhibit-container">
+                    <!-- EXHIBIT 1: CHAINPROOF (RESEARCH DIRECTION) -->
+                    <article class="project-exhibit-card flagship-exhibit motion-reveal-item">
+                        <div class="exhibit-header-bar">
+                            <span class="status-badge flagship-status">Major Project — Started August 2026</span>
+                            <span class="exhibit-category-tag">RESEARCH DIRECTION</span>
+                        </div>
+
+                        <div class="exhibit-title-area">
+                            <h3 class="exhibit-title">CHAINPROOF</h3>
+                            <p class="exhibit-subtitle">Evidence-Based Verification of Software Supply-Chain Integrity</p>
+                        </div>
+
+                        <div class="exhibit-editorial-grid">
+                            <!-- Left Column: Overview & Problem Statement -->
+                            <div class="exhibit-column-main">
+                                <div class="exhibit-content-block">
+                                    <h4 class="block-label">OVERVIEW</h4>
+                                    <p class="exhibit-text">
+                                        ChainProof asks one specific question: which combinations of code signatures, build provenance (SLSA), software bills of materials (SBOMs), and reproducible builds actually catch tampering in an open-source software supply chain — and which just look secure without doing much. It's built as a research project first: a testable question and a threat model, not a tool demo.
+                                    </p>
+                                </div>
+
+                                <div class="exhibit-content-block">
+                                    <h4 class="block-label">PROBLEM STATEMENT</h4>
+                                    <p class="exhibit-text">
+                                        Software supply-chain attacks — tampered dependencies, compromised build pipelines, poisoned containers — are an increasingly common way real breaches start, and most verification methods get adopted without being tested against actual tampering scenarios.
+                                    </p>
+                                </div>
+
+                                <div class="exhibit-content-block">
+                                    <h4 class="block-label">APPROACH (PLANNED)</h4>
+                                    <p class="exhibit-text">
+                                        Build a source-to-artifact evidence chain covering commit, build, and artifact stages. Generate SBOMs (starting with Syft), verify build provenance against the SLSA framework, and check build reproducibility — then measure what each layer actually catches versus misses, against a labelled set of tampering scenarios.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Right Column: Expected Output, Status & Tech Stack -->
+                            <div class="exhibit-column-side">
+                                <div class="exhibit-content-block">
+                                    <h4 class="block-label">EXPECTED OUTPUT</h4>
+                                    <p class="exhibit-text">
+                                        An open-source verifier, a labelled tampering benchmark, and reproducible experiment results.
+                                    </p>
+                                </div>
+
+                                <div class="exhibit-content-block">
+                                    <h4 class="block-label">STATUS</h4>
+                                    <p class="exhibit-text">
+                                        Just started — August 2026. No code or results yet. This section will be updated with a repo link, real findings, and data as the project develops.
+                                    </p>
+                                </div>
+
+                                <div class="exhibit-content-block">
+                                    <h4 class="block-label">RESEARCH STACK</h4>
+                                    <div class="exhibit-tech-list">
+                                        <span class="minimal-tag" data-desc="Digital signatures for code commits and release binaries.">Code Signatures</span>
+                                        <span class="minimal-tag" data-desc="CLI tool for generating Software Bill of Materials (SBOMs).">Syft (SBOM)</span>
+                                        <span class="minimal-tag" data-desc="Supply-chain Levels for Software Artifacts security framework.">SLSA Framework</span>
+                                        <span class="minimal-tag" data-desc="Verifying identical byte-for-byte build outputs from source code.">Reproducible Builds</span>
+                                        <span class="minimal-tag" data-desc="Evaluating open-source build pipeline and dependency security.">Supply Chain Security</span>
+                                        <span class="minimal-tag" data-desc="Curated testbed of tampered dependencies and pipeline attacks.">Tampering Benchmark</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- EXHIBIT 2: NETRA DEVICE -->
+                    <article class="project-exhibit-card secondary-exhibit motion-reveal-item" style="margin-top: 2.5rem;">
+                        <div class="exhibit-header-bar">
+                            <span class="status-badge secondary-status">College Project Prototype</span>
+                            <span class="exhibit-category-tag">NETWORK SECURITY APPLIANCE</span>
+                        </div>
+
+                        <div class="exhibit-title-area">
+                            <h3 class="exhibit-title">NETRA</h3>
+                            <p class="exhibit-subtitle">Portable Network Security Device for Public Wi-Fi Protection</p>
+                        </div>
+
+                        <div class="exhibit-editorial-grid">
+                            <!-- Left Column: Overview, Problem Statement & Approach -->
+                            <div class="exhibit-column-main">
+                                <div class="exhibit-content-block">
+                                    <h4 class="block-label">OVERVIEW</h4>
+                                    <p class="exhibit-text">
+                                        NETRA is a portable, plug-and-play network security device designed to provide an additional layer of protection when using public or untrusted Wi-Fi networks. It monitors network traffic, identifies suspicious activity and potential security threats, blocks detected threats, and provides security alerts through a web-based dashboard.
+                                    </p>
+                                </div>
+
+                                <div class="exhibit-content-block">
+                                    <h4 class="block-label">PROBLEM STATEMENT</h4>
+                                    <p class="exhibit-text">
+                                        Public Wi-Fi networks can expose users to network-based threats such as man-in-the-middle attacks, suspicious connections, port scanning, and unknown network activity. Conventional users often have limited visibility into what is happening within the network while they are connected, making it difficult to identify or respond to potential threats in real time.
+                                    </p>
+                                </div>
+
+                                <div class="exhibit-content-block">
+                                    <h4 class="block-label">APPROACH</h4>
+                                    <p class="exhibit-text">
+                                        NETRA operates as an intermediary between the network router and the user's system, allowing network traffic to be monitored and inspected for suspicious activity. Detected threats are evaluated and appropriate traffic-blocking actions can be applied, while security events are communicated through the NETRA web dashboard for real-time visibility.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Right Column: Key Capabilities, Expected Outcome, Status & Security Stack -->
+                            <div class="exhibit-column-side">
+                                <div class="exhibit-content-block">
+                                    <h4 class="block-label">KEY CAPABILITIES</h4>
+                                    <ul class="editorial-features-list">
+                                        <li>Network traffic monitoring and inspection</li>
+                                        <li>Detection of potential man-in-the-middle activity</li>
+                                        <li>Port scanning detection &amp; suspicious IP identification</li>
+                                        <li>Threat blocking and real-time security alerts</li>
+                                        <li>Web-based security monitoring dashboard</li>
+                                        <li>Portable deployment for public or untrusted Wi-Fi</li>
+                                    </ul>
+                                </div>
+
+                                <div class="exhibit-content-block">
+                                    <h4 class="block-label">EXPECTED OUTCOME</h4>
+                                    <p class="exhibit-text">
+                                        A portable network security solution that improves visibility into network activity and provides users with an additional layer of threat detection, blocking, and alerting when operating over public or untrusted Wi-Fi.
+                                    </p>
+                                </div>
+
+                                <div class="exhibit-content-block">
+                                    <h4 class="block-label">STATUS</h4>
+                                    <p class="exhibit-text">
+                                        College project — prototype and web dashboard developed. The project demonstrates the concept of portable network monitoring, threat detection, automated blocking, and security alerting.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Full-Width Security Stack Block -->
+                        <div class="exhibit-content-block" style="margin-top: 1.75rem;">
+                            <h4 class="block-label">SECURITY STACK</h4>
+                            <div class="exhibit-tech-list">
+                                <span class="minimal-tag" data-desc="Open-source intrusion detection and prevention engine.">Suricata IDS/IPS</span>
+                                <span class="minimal-tag" data-desc="Linux kernel firewall utility for packet filtering and threat blocking.">iptables</span>
+                                <span class="minimal-tag" data-desc="Real-time capture and logging of network packet flows.">Traffic Monitoring</span>
+                                <span class="minimal-tag" data-desc="Payload inspection for security threats and signature matching.">Deep Packet Inspection</span>
+                                <span class="minimal-tag" data-desc="Operating system host environment for monitoring services.">Linux</span>
+                                <span class="minimal-tag" data-desc="Compact embedded hardware host for portable network deployment.">Raspberry Pi 2W</span>
+                                <span class="minimal-tag" data-desc="Web dashboard for security alerts and event monitoring.">Web Security Dashboard</span>
+                                <span class="minimal-tag" data-desc="Defensive network architecture and threat mitigation.">Network Security</span>
+                            </div>
+                        </div>
+
+                        <div class="exhibit-actions" style="margin-top: 2rem;">
+                            <button class="btn btn-secondary" data-doc="assets/docs/projects/netra_presentation.pdf" data-doc-title="NETRA – Portable Network Security Device" data-doc-type="pdf">
+                                View Presentation (PDF)
+                            </button>
+                            <a href="https://github.com/maajed/defrox-ruf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                GitHub Repository
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- EXHIBIT 3: PROOF OF WORK -->
+                    <article class="project-exhibit-card secondary-exhibit motion-reveal-item" style="margin-top: 2.5rem;">
+                        <div class="exhibit-header-bar">
+                            <span class="status-badge hackathon-status">24-Hour Hackathon Prototype — Build2Gether AI Hackathon, 2026</span>
+                        </div>
+
+                        <div class="exhibit-title-area">
+                            <h3 class="exhibit-title">PROOF OF WORK</h3>
+                            <p class="exhibit-subtitle">Decentralized Labor Verification &amp; AI-Powered Trust Infrastructure</p>
+                        </div>
+
+                        <div class="exhibit-content-block">
+                            <h4 class="block-label">TEAM &amp; CONTRIBUTION</h4>
+                            <p class="exhibit-text">
+                                Built by Team &quot;Peanut Butter&quot; — 3 members.<br>
+                                <strong>My contribution:</strong> Frontend engineering, ML-based anomaly-detection logic, and pitch deck &amp; presentation design.
+                            </p>
+                        </div>
+
+                        <div class="exhibit-content-block">
+                            <h4 class="block-label">OVERVIEW &amp; PURPOSE</h4>
+                            <p class="exhibit-text">
+                                A 24-hour hackathon prototype created for labor verification and digital identity management. Enables workers to log verified contributions, features custom backend logic, and implements ML-based anomaly detection to flag suspicious activity spikes.
+                            </p>
+                        </div>
+
+                        <div class="exhibit-content-block">
+                            <h4 class="block-label">KEY FEATURES</h4>
+                            <ul class="editorial-features-list">
+                                <li>Worker Passport — verifiable digital professional identity system model.</li>
+                                <li>Peer-based work verification workflows with custom backend logic.</li>
+                                <li>ML anomaly detection engine for identifying suspicious labor log metrics.</li>
+                                <li>Designed tamper-resistant record structure for contribution history logging.</li>
+                                <li>Submission pitch deck and presentation architecture for Build2Gether AI.</li>
+                            </ul>
+                        </div>
+
+                        <div class="exhibit-content-block">
+                            <h4 class="block-label">TECHNOLOGY STACK &amp; STATUS</h4>
+                            <ul class="editorial-features-list" style="margin-bottom: 1.25rem;">
+                                <li><strong>Built:</strong> HTML, CSS, JavaScript (frontend); custom backend logic; ML-based anomaly detection.</li>
+                                <li><strong>Designed (Not Deployed):</strong> Decentralized identity model, tamper-resistant record structure (blockchain concept — no live network running).</li>
+                                <li><strong>Planned:</strong> IPFS storage integration.</li>
+                            </ul>
+                            <div class="exhibit-tech-list">
+                                <span class="minimal-tag" data-desc="Interactive frontend built with HTML, CSS, and JavaScript.">HTML / CSS / JS</span>
+                                <span class="minimal-tag" data-desc="Custom backend services handling user requests and record processing.">Custom Backend Logic</span>
+                                <span class="minimal-tag" data-desc="Machine learning algorithms detecting metric spikes and suspicious log anomalies.">ML Anomaly Detection</span>
+                                <span class="minimal-tag" data-desc="Decentralized digital identity model (designed concept — not deployed).">Decentralized Identity (Concept)</span>
+                                <span class="minimal-tag" data-desc="Tamper-resistant ledger schema (designed concept — no live network running).">Blockchain Concept</span>
+                                <span class="minimal-tag" data-desc="Planned integration with IPFS for distributed file storage.">IPFS Storage (Planned)</span>
+                            </div>
+                        </div>
+
+                        <div class="exhibit-actions">
+                            <button class="btn btn-secondary" data-doc="assets/docs/projects/Proof-Of-Work.pdf" data-doc-title="Proof-Of-Work – Build2Gether AI Submission Deck" data-doc-type="pdf">
+                                View Submission Deck (PDF)
+                            </button>
+                            <a href="https://github.com/bharanx/Proof-Of-Work" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                GitHub Repository
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Separator 3: Labs -->
+        <div class="brutalist-separator">
+            <span>Labs &amp; Practice</span>
+            <div class="arrow-circle" aria-hidden="true">&rarr;</div>
+        </div>
+
+        <!-- Fold 4: Labs & Security Practice Section -->
+        <section id="labs" class="labs-section scroll-spy">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="cyber-tag">🧪 HANDS-ON PRACTICE</span>
+                    <h2>Labs &amp; Learning Environments</h2>
+                    <p class="subtitle">Fundamentals first — the rooms below cover the Linux, networking, and defensive analysis skills that underpin the security research I'm doing now. Web application security (PortSwigger) is next.</p>
+                </div>
+
+                <!-- Verified Summary Bar -->
+                <div class="labs-summary-grid">
+                    <div class="labs-summary-card">
+                        <span class="summary-metric-val">26</span>
+                        <div class="summary-metric-text">
+                            <strong>TryHackMe Rooms</strong>
+                            <span>Completed Practice Rooms</span>
+                        </div>
+                    </div>
+                    <div class="labs-summary-card">
+                        <span class="summary-metric-val">16</span>
+                        <div class="summary-metric-text">
+                            <strong>CyLab Challenges</strong>
+                            <span>Completed CTF Tasks</span>
+                        </div>
+                    </div>
+                    <div class="labs-summary-card">
+                        <span class="summary-metric-val status-in-progress">IN PROGRESS</span>
+                        <div class="summary-metric-text">
+                            <strong>PortSwigger Academy</strong>
+                            <span>Upcoming Learning Area</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Platform Filter Tabs -->
+                <div class="labs-filter-bar">
+                    <button class="labs-filter-btn active" data-filter="all">All Environments</button>
+                    <button class="labs-filter-btn" data-filter="tryhackme">TryHackMe (26)</button>
+                    <button class="labs-filter-btn" data-filter="cylab">CyLab / picoCTF (16)</button>
+                    <button class="labs-filter-btn" data-filter="portswigger">PortSwigger (Upcoming)</button>
+                </div>
+
+                <!-- LABS PLATFORMS CONTAINER -->
+                <div class="labs-platforms-wrapper">
+                    <!-- PLATFORM 1: TRYHACKME -->
+                    <div class="labs-platform-card motion-reveal-item" data-platform-group="tryhackme">
+                        <div class="platform-card-header">
+                            <div class="platform-title-group">
+                                <div class="platform-logo-box thm-brand-box">
+                                    <svg viewBox="0 0 100 80" width="38" height="30" fill="none" stroke="#cf2127" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M 25 60 C 10 60 5 45 18 35 C 15 20 35 10 50 20 C 65 5 85 20 80 38 C 92 45 88 60 72 60 Z"/>
+                                    </svg>
+                                </div>
+                                <div class="platform-title-area">
+                                    <span class="platform-badge thm-badge">TRYHACKME</span>
+                                    <h3 class="thm-brand-title">Try<span style="color:#cf2127;">Hack</span>Me <span class="brand-sub">Learning Rooms</span></h3>
+                                    <p class="platform-subtitle">26 Verified Practice Rooms Completed</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="thm-rooms-grid">
+                            <div class="thm-room-item" data-desc="Embark on the journey of learning the fundamentals of Linux. Learn to run essential commands on an interactive terminal.">
+                                <span class="room-num">01</span>
+                                <span class="room-title">Linux Fundamentals Part 1</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Continue your learning Linux journey with part two. Learn how to log in using SSH, advance commands, and file permissions.">
+                                <span class="room-num">02</span>
+                                <span class="room-title">Linux Fundamentals Part 2</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Power-up your Linux skills and get hands-on with common day-to-day security and system utilities.">
+                                <span class="room-num">03</span>
+                                <span class="room-title">Linux Fundamentals Part 3</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="To exploit a website, you first need to know how web architecture and pages are created.">
+                                <span class="room-num">04</span>
+                                <span class="room-title">How Websites Work</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Learn the basics of web applications: HTTP, URLs, request methods, response codes, and headers.">
+                                <span class="room-num">05</span>
+                                <span class="room-title">Web Application Basics</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Learn how all individual components of the web work together to bring access to websites.">
+                                <span class="room-num">06</span>
+                                <span class="room-title">Putting It All Together</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Learn how DNS resolution works and how it helps you access internet services seamlessly.">
+                                <span class="room-num">07</span>
+                                <span class="room-title">DNS in Detail</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Learn about how you request content from a web server using the HTTP protocol suite.">
+                                <span class="room-num">08</span>
+                                <span class="room-title">HTTP in Detail</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Journey through Windows Fundamentals: Windows desktop, NTFS file system, UAC, and Control Panel.">
+                                <span class="room-num">09</span>
+                                <span class="room-title">Windows Fundamentals 1</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Learn about the fundamental networking framework that determines data handling across network layers.">
+                                <span class="room-num">10</span>
+                                <span class="room-title">OSI Model</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Learn about the core technologies, topologies, and designs that power private local networks.">
+                                <span class="room-num">11</span>
+                                <span class="room-title">Intro to LAN</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Begin learning the core fundamentals of computer networking in a bite-sized, interactive module.">
+                                <span class="room-num">12</span>
+                                <span class="room-title">What is Networking?</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Understand how data is divided into smaller pieces and transmitted across network interfaces.">
+                                <span class="room-num">13</span>
+                                <span class="room-title">Packets &amp; Frames</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Learn about technologies used to extend private networks out onto the global Internet.">
+                                <span class="room-num">14</span>
+                                <span class="room-title">Extending Your Network</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Learn to efficiently search the Internet using specialized search engine syntax and technical docs.">
+                                <span class="room-num">15</span>
+                                <span class="room-title">Search Skills</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Learn how to use OWASP ZAP from the ground up as a powerful alternative to Burp Suite.">
+                                <span class="room-num">16</span>
+                                <span class="room-title">Introduction to OWASP ZAP</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Learn about essential tools for passive reconnaissance such as whois, nslookup, and dig.">
+                                <span class="room-num">17</span>
+                                <span class="room-title">Passive Reconnaissance</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Learn how to use active tools such as traceroute, ping, telnet, and web browsers to gather info.">
+                                <span class="room-num">18</span>
+                                <span class="room-title">Active Reconnaissance</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Understand application flaws and apply researching skills across vulnerability databases.">
+                                <span class="room-num">19</span>
+                                <span class="room-title">Vulnerabilities 101</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="The Cyber Kill Chain framework for identification and prevention of network intrusions.">
+                                <span class="room-num">20</span>
+                                <span class="room-title">Cyber Kill Chain</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Hack your first website legally in a safe environment and experience an ethical hacker's workflow.">
+                                <span class="room-num">21</span>
+                                <span class="room-title">Offensive Security Intro</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Introducing defensive security: Threat Intelligence, SOC operations, DFIR, Malware Analysis, and SIEM.">
+                                <span class="room-num">22</span>
+                                <span class="room-title">Defensive Security Intro</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Explore the diverse career pathways, roles, and specializations in cybersecurity.">
+                                <span class="room-num">23</span>
+                                <span class="room-title">Careers in Cyber</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Learn about the security triad (CIA) and common security architectural models and principles.">
+                                <span class="room-num">24</span>
+                                <span class="room-title">Security Principles</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Explore policies, compliance standards, and frameworks vital for regulating cyber security.">
+                                <span class="room-num">25</span>
+                                <span class="room-title">Governance &amp; Regulation</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                            <div class="thm-room-item" data-desc="Discover the measurable impact of security awareness and technical training on teams.">
+                                <span class="room-num">26</span>
+                                <span class="room-title">Training Impact on Teams</span>
+                                <span class="room-status-check">✓</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PLATFORM 2: CYLAB / PICOCTF -->
+                    <div class="labs-platform-card motion-reveal-item" data-platform-group="cylab">
+                        <div class="platform-card-header">
+                            <div class="platform-title-group">
+                                <div class="platform-logo-box pico-brand-box">
+                                    <svg viewBox="0 0 100 100" width="34" height="34">
+                                        <circle cx="50" cy="50" r="48" fill="#c097c6"/>
+                                        <path d="M60 56 L85 85 L70 95 L42 56 Z" fill="#b90036"/>
+                                        <path d="M42 24 H58 A 14 14 0 0 1 58 52 H42 Z" fill="#ffffff"/>
+                                        <rect x="36" y="24" width="12" height="52" fill="#ffffff"/>
+                                    </svg>
+                                </div>
+                                <div class="platform-title-area">
+                                    <span class="platform-badge cylab-badge">CYLAB / PICOCTF</span>
+                                    <h3 class="pico-brand-title"><span style="color:#b90036;">pico</span><span style="color:#b90036; font-weight:900;">CTF</span> <span class="brand-sub">&amp; CyLab Academy</span></h3>
+                                    <p class="platform-subtitle">Learner since February 2026</p>
+                                </div>
+                            </div>
+                            <div class="platform-profile-link">
+                                <span class="profile-handle-tag">Handle: <strong>bharanx</strong></span>
+                                <a href="https://learn.cylabacademy.org/users/bharanx" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                                    View Academy Profile &nearr;
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="cylab-profile-stats-container">
+                            <div class="cylab-stat-header">
+                                <strong>Challenge Completion</strong>
+                                <span class="cylab-total-count"><strong>16</strong> Total</span>
+                            </div>
+                            <div class="cylab-progress-bar-wrap">
+                                <div class="cylab-bar-fill easy-fill" style="width: 93.75%;"></div>
+                                <div class="cylab-bar-fill medium-fill" style="width: 6.25%;"></div>
+                            </div>
+                            <div class="cylab-breakdown-row">
+                                <div class="cylab-breakdown-item">
+                                    <span class="breakdown-num">15</span>
+                                    <span class="breakdown-label label-easy">Easy</span>
+                                </div>
+                                <div class="cylab-breakdown-item">
+                                    <span class="breakdown-num">1</span>
+                                    <span class="breakdown-label label-medium">Medium</span>
+                                </div>
+                                <div class="cylab-breakdown-item">
+                                    <span class="breakdown-num">0</span>
+                                    <span class="breakdown-label label-hard">Hard</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PLATFORM 3: PORTSWIGGER (UPCOMING / IN PROGRESS) -->
+                    <div class="labs-platform-card motion-reveal-item" data-platform-group="portswigger">
+                        <div class="platform-card-header">
+                            <div class="platform-title-group">
+                                <div class="platform-logo-box portswigger-brand-box">
+                                    <svg viewBox="0 0 100 100" width="34" height="34">
+                                        <rect width="100" height="100" rx="14" fill="#ff6633"/>
+                                        <path d="M54 14 L36 48 L52 48 L40 86 L64 44 L48 44 Z" fill="#ffffff"/>
+                                    </svg>
+                                </div>
+                                <div class="platform-title-area">
+                                    <span class="platform-badge portswigger-badge">PORTSWIGGER</span>
+                                    <h3 class="portswigger-brand-title">Port<span style="color:var(--text-primary);">Swigger</span> <span class="brand-sub">Web Security Academy</span></h3>
+                                    <p class="platform-subtitle status-text-upcoming">Next Practice Area — Learning Soon</p>
+                                </div>
+                            </div>
+                            <a href="https://portswigger.net/web-security" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                                PortSwigger Academy Site &nearr;
+                            </a>
+                        </div>
+
+                        <div class="portswigger-notice-box">
+                            <p class="portswigger-notice-text">
+                                Upcoming hands-on learning environment. I plan to work through PortSwigger's web security vulnerability labs as part of my ongoing application security practice.
+                            </p>
+                        </div>
+
+                        <div class="portswigger-topics-area">
+                            <h4 class="block-label">PLANNED TOPICS TO EXPLORE</h4>
+                            <div class="portswigger-topics-grid">
+                                <div class="topic-pill-item" data-desc="Exploring database queries, blind SQLi techniques, parameter sanitization, and SQL injection mitigations."><span class="topic-bullet">&bull;</span> SQL Injection</div>
+                                <div class="topic-pill-item" data-desc="Analyzing Reflected, Stored, and DOM XSS vulnerabilities to master client-side script security."><span class="topic-bullet">&bull;</span> Cross-Site Scripting (XSS)</div>
+                                <div class="topic-pill-item" data-desc="Understanding Cross-Site Request Forgery mechanics, anti-CSRF token defense, and SameSite cookies."><span class="topic-bullet">&bull;</span> CSRF</div>
+                                <div class="topic-pill-item" data-desc="Studying broken authentication flaws, multi-factor bypasses, session management, and brute-force defenses."><span class="topic-bullet">&bull;</span> Authentication</div>
+                                <div class="topic-pill-item" data-desc="Investigating broken access controls, IDOR vulnerabilities, and privilege escalation vectors."><span class="topic-bullet">&bull;</span> Access Control</div>
+                                <div class="topic-pill-item" data-desc="Core HTTP protocol security, web application architecture, and systematic security testing methodologies."><span class="topic-bullet">&bull;</span> Web Security Fundamentals</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Separator 4: Skills -->
+        <div class="brutalist-separator">
+            <span>Technical Skills</span>
+            <div class="arrow-circle" aria-hidden="true">&rarr;</div>
+        </div>
+
+        <!-- Fold 3: Skills Section - Problem-Solving Capabilities -->
+        <section id="skills" class="skills-section scroll-spy">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Technical Skills &amp; Action-Oriented Capabilities</h2>
+                    <p class="subtitle">Organized by core security objectives and practical engineering application rather than generic textbook categories.</p>
+                </div>
+
+                <div class="problem-skills-grid">
+                    <!-- Card 1: Automation & Scripting -->
+                    <div class="problem-skill-card">
+                        <div class="problem-card-header">
+                            <div class="problem-icon-wrapper">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/><circle cx="12" cy="12" r="4"/></svg>
+                            </div>
+                            <div class="problem-title-group">
+                                <h3>Automation &amp; Scripting</h3>
+                            </div>
+                        </div>
+                        <div class="utility-statement-box">
+                            <p class="utility-statement">Writing custom security scripts, automated audit pipelines, and socket-level network tools.</p>
+                        </div>
+                        <div class="problem-skill-tags">
+                            <span class="minimal-tag" data-desc="Scripting for security automation, network socket programming, and tool development.">Python</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Traffic & Protocol Analysis -->
+                    <div class="problem-skill-card">
+                        <div class="problem-card-header">
+                            <div class="problem-icon-wrapper">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="18" r="3"/><line x1="12" y1="9" x2="6" y2="15"/><line x1="12" y1="9" x2="18" y2="15"/><line x1="9" y1="18" x2="15" y2="18"/></svg>
+                            </div>
+                            <div class="problem-title-group">
+                                <h3>Traffic &amp; Protocol Analysis</h3>
+                            </div>
+                        </div>
+                        <div class="utility-statement-box">
+                            <p class="utility-statement">Deep packet inspection, network topology simulation, and low-level protocol flow diagnostics.</p>
+                        </div>
+                        <div class="problem-skill-tags">
+                            <span class="minimal-tag" data-desc="Deep packet inspection, network protocol analysis, and packet capturing.">Wireshark</span>
+                            <span class="minimal-tag" data-desc="Visual network topology simulation, router configuration, and device setup.">Cisco Packet Tracer</span>
+                            <span class="minimal-tag" data-desc="Core internet protocol suite, IP addressing, subnetting, and data routing.">TCP/IP Fundamentals</span>
+                            <span class="minimal-tag" data-desc="Monitoring network traffic flows, diagnosing latency, and identifying protocol anomalies.">Network Analysis</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Containerization & Deployment -->
+                    <div class="problem-skill-card">
+                        <div class="problem-card-header">
+                            <div class="problem-icon-wrapper">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="5" rx="1"/><rect x="2" y="12" width="20" height="5" rx="1"/><path d="M6 8v4M18 8v4M10 8v4M14 8v4"/></svg>
+                            </div>
+                            <div class="problem-title-group">
+                                <h3>Containerization &amp; Deployment</h3>
+                            </div>
+                        </div>
+                        <div class="utility-statement-box">
+                            <p class="utility-statement">Using containerization to create reproducible, isolated testing environments across dev and lab setups.</p>
+                        </div>
+                        <div class="problem-skill-tags">
+                            <span class="minimal-tag" data-desc="Containerization platform for isolated application deployment and lab environments.">Docker</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: System & Web Inspection -->
+                    <div class="problem-skill-card">
+                        <div class="problem-card-header">
+                            <div class="problem-icon-wrapper">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                            </div>
+                            <div class="problem-title-group">
+                                <h3>System &amp; Web Inspection</h3>
+                            </div>
+                        </div>
+                        <div class="utility-statement-box">
+                            <p class="utility-statement">Performing active host discovery, HTTP proxy auditing, and vulnerability assessment.</p>
+                        </div>
+                        <div class="problem-skill-tags">
+                            <span class="minimal-tag" data-desc="Active network discovery, host detection, and port security scanning.">Nmap</span>
+                            <span class="minimal-tag" data-desc="Web application security testing proxy, scanner, and vulnerability suite.">Burp Suite</span>
+                            <span class="minimal-tag" data-desc="Lightweight, modern web security auditing proxy and traffic editor.">Caido</span>
+                            <span class="minimal-tag" data-desc="Securing network infrastructure, traffic inspection, and perimeter protection.">Network Security</span>
+                            <span class="minimal-tag" data-desc="Identifying, scanning, and analyzing security weaknesses in systems.">Vulnerability Assessment</span>
+                            <span class="minimal-tag" data-desc="Authorized testing to evaluate infrastructure security and find exploits.">Penetration Testing Fundamentals</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Separator 3: Certifications -->
+        <div class="brutalist-separator">
+            <span>Certifications</span>
+            <div class="arrow-circle" aria-hidden="true">&rarr;</div>
+        </div>
+
+        <!-- Fold 4: Certifications Grid Section -->
+        <section id="certs" class="certs-section scroll-spy">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Certifications</h2>
+                </div>
+
+                <div class="certs-grid">
+                    <!-- Card 1: Cloud Computing -->
+                    <div class="cert-grid-card scroll-reveal-card" data-direction="left">
+                        <div class="cert-grid-card-header">
+                            <div class="cert-emblem-badge">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-5.45 9-12V7l-9-5zm-2 16l-4-4 1.41-1.41L10 15.17l6.59-6.59L18 10l-8 8z"/></svg>
+                                <span>IIT MADRAS</span>
+                            </div>
+                            <span class="cert-pill">NPTEL</span>
+                        </div>
+                        <h3 class="cert-grid-title">Cloud Computing</h3>
+                        <p class="cert-grid-subtitle">NPTEL, IIT Madras</p>
+                        <div class="cert-grid-divider"></div>
+                        <div class="cert-grid-footer">
+                            <span class="cert-grid-date">
+                                <svg class="calendar-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z" />
+                                </svg>
+                                Jan-Apr 2026
+                            </span>
+                            <button class="cert-grid-view" data-doc="assets/docs/certificates/cloud_computing.pdf" data-doc-title="Cloud Computing – NPTEL" data-doc-type="pdf">
+                                View
+                                <svg class="eye-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Python for Data Science -->
+                    <div class="cert-grid-card scroll-reveal-card" data-direction="right">
+                        <div class="cert-grid-card-header">
+                            <div class="cert-emblem-badge">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-5.45 9-12V7l-9-5zm-2 16l-4-4 1.41-1.41L10 15.17l6.59-6.59L18 10l-8 8z"/></svg>
+                                <span>IIT MADRAS</span>
+                            </div>
+                            <span class="cert-pill">NPTEL</span>
+                        </div>
+                        <h3 class="cert-grid-title">Python for Data Science</h3>
+                        <p class="cert-grid-subtitle">NPTEL, IIT Madras</p>
+                        <div class="cert-grid-divider"></div>
+                        <div class="cert-grid-footer">
+                            <span class="cert-grid-date">
+                                <svg class="calendar-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z" />
+                                </svg>
+                                Jan-Feb 2025
+                            </span>
+                            <button class="cert-grid-view" data-doc="assets/docs/certificates/python_data_science.pdf" data-doc-title="Python for Data Science – NPTEL" data-doc-type="pdf">
+                                View
+                                <svg class="eye-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Cybersecurity Essential Practices -->
+                    <div class="cert-grid-card scroll-reveal-card" data-direction="left">
+                        <div class="cert-grid-card-header">
+                            <div class="cert-emblem-badge shield-badge">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-5.45 9-12V5l-9-4zm-1 6h2v2h-2V7zm0 4h2v6h-2v-6z"/></svg>
+                                <span>HEBESEC</span>
+                            </div>
+                            <span class="cert-pill">SECURITY</span>
+                        </div>
+                        <h3 class="cert-grid-title">Cybersecurity Essential Practices</h3>
+                        <p class="cert-grid-subtitle">Hebesec Technologies</p>
+                        <div class="cert-grid-divider"></div>
+                        <div class="cert-grid-footer">
+                            <span class="cert-grid-date">
+                                <svg class="calendar-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z" />
+                                </svg>
+                                Aug-Sep 2025
+                            </span>
+                            <button class="cert-grid-view" data-doc="assets/docs/certificates/cybersecurity_essentials.pdf" data-doc-title="Cybersecurity Essential Practices – Hebesec" data-doc-type="pdf">
+                                View
+                                <svg class="eye-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Design Thinking – A Primer -->
+                    <div class="cert-grid-card scroll-reveal-card" data-direction="right">
+                        <div class="cert-grid-card-header">
+                            <div class="cert-emblem-badge">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-5.45 9-12V7l-9-5zm-2 16l-4-4 1.41-1.41L10 15.17l6.59-6.59L18 10l-8 8z"/></svg>
+                                <span>IIT MADRAS</span>
+                            </div>
+                            <span class="cert-pill">NPTEL</span>
+                        </div>
+                        <h3 class="cert-grid-title">Design Thinking – A Primer</h3>
+                        <p class="cert-grid-subtitle">NPTEL, IIT Madras</p>
+                        <div class="cert-grid-divider"></div>
+                        <div class="cert-grid-footer">
+                            <span class="cert-grid-date">
+                                <svg class="calendar-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z" />
+                                </svg>
+                                Jul-Aug 2025
+                            </span>
+                            <button class="cert-grid-view" data-doc="assets/docs/certificates/design_thinking.pdf" data-doc-title="Design Thinking – NPTEL, IIT Madras" data-doc-type="pdf">
+                                View
+                                <svg class="eye-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Programming in JAVA -->
+                    <div class="cert-grid-card scroll-reveal-card" data-direction="left">
+                        <div class="cert-grid-card-header">
+                            <div class="cert-emblem-badge code-badge">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+                                <span>SSI JAVA</span>
+                            </div>
+                            <span class="cert-pill">SSI</span>
+                        </div>
+                        <h3 class="cert-grid-title">Programming in JAVA</h3>
+                        <p class="cert-grid-subtitle">SSI Computer Education</p>
+                        <div class="cert-grid-divider"></div>
+                        <div class="cert-grid-footer">
+                            <span class="cert-grid-date">
+                                <svg class="calendar-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z" />
+                                </svg>
+                                May-Jul 2024
+                            </span>
+                            <button class="cert-grid-view" data-doc="assets/docs/certificates/programming_java.pdf" data-doc-title="Programming in Java – SSI Computer Education" data-doc-type="pdf">
+                                View
+                                <svg class="eye-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Separator 5: Contact -->
+        <div class="brutalist-separator">
+            <span>Contact</span>
+            <div class="arrow-circle" aria-hidden="true">&rarr;</div>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-spy">
+
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="cyber-tag">📬 SECURE CONNECTION</span>
+                    <h2>Let's Secure Something Together</h2>
+                    <p class="subtitle">Open for security research collaborations, development projects, or queries.</p>
+                </div>
+
+                <div class="centered-contact-area">
+                    <div class="contact-cta-box">
+                        <p class="contact-cta-label">ESTABLISH CONNECTION</p>
+                        <h3>Ready to Secure the Digital Frontier?</h3>
+                        <p class="contact-cta-desc">
+                            Whether you're looking for a cybersecurity specialist for internships, secure software
+                            engineering collaborations, or general technical inquiries, let's connect.
+                        </p>
+                    </div>
+
+                    <div class="contact-channels-grid">
+                        <!-- Email Link -->
+                        <a href="mailto:bharanibd2007@gmail.com" class="contact-channel-card">
+                            <div class="channel-icon-wrapper">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="#ffffff" aria-hidden="true">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                            </div>
+                            <span class="channel-title">Email</span>
+                            <span class="channel-value">bharanibd2007@gmail.com</span>
+                        </a>
+
+                        <!-- LinkedIn Link -->
+                        <a href="https://linkedin.com/in/bharanidharan-s-4458b5326" target="_blank"
+                            rel="noopener noreferrer" class="contact-channel-card">
+                            <div class="channel-icon-wrapper">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="#ffffff" aria-hidden="true">
+                                    <path
+                                        d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                                </svg>
+                            </div>
+                            <span class="channel-title">LinkedIn</span>
+                            <span class="channel-value">bharanidharan-s-4458b5326</span>
+                        </a>
+
+                        <!-- GitHub Link -->
+                        <a href="https://github.com/bharanx" target="_blank" rel="noopener noreferrer"
+                            class="contact-channel-card">
+                            <div class="channel-icon-wrapper">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="#ffffff" aria-hidden="true">
+                                    <path
+                                        d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                                </svg>
+                            </div>
+                            <span class="channel-title">GitHub</span>
+                            <span class="channel-value">github.com/bharanx</span>
+                        </a>
+
+                        <!-- Phone Link -->
+                        <a href="tel:+917339364318" class="contact-channel-card">
+                            <div class="channel-icon-wrapper">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="#ffffff" aria-hidden="true">
+                                    <path
+                                        d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                                </svg>
+                            </div>
+                            <span class="channel-title">Phone</span>
+                            <span class="channel-value">+91 7339364318</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 Bharanidharan S | Breaking systems to understand them. Building systems to protect them.</p>
+        </div>
+    </footer>
+
+    <!-- Universal Document Viewer Modal -->
+    <div id="docViewerModal" class="doc-viewer-overlay" role="dialog" aria-modal="true" aria-labelledby="docViewerTitle" hidden>
+        <div class="doc-viewer-backdrop" id="docViewerBackdrop"></div>
+        <div class="doc-viewer-container">
+            <div class="doc-viewer-header">
+                <span id="docViewerTitle" class="doc-viewer-title"></span>
+                <div class="doc-viewer-controls">
+                    <button id="docViewerFullscreen" class="dv-btn" title="Fullscreen" aria-label="Toggle fullscreen">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                    </button>
+                    <button id="docViewerClose" class="dv-btn dv-btn-close" aria-label="Close viewer">&#x2715;</button>
+                </div>
+            </div>
+            <div class="doc-viewer-body">
+                <iframe id="docViewerFrame" title="Document Viewer" allowfullscreen></iframe>
+                <div id="docViewerFallback" class="doc-viewer-fallback" hidden>
+                    <div class="dv-fallback-inner">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                        <h3>Preview not available locally</h3>
+                        <p>PowerPoint previews require a live public URL. Deploy your portfolio online and the viewer will work automatically.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Back to Top Action Button -->
+    <button class="back-to-top-btn" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Crisp Toast Notification Banner -->
+    <div class="cyber-toast" id="cyberToast" role="alert" aria-live="polite">
+        <span class="toast-icon">📋</span>
+        <span class="toast-msg" id="toastMsg">COPIED TO CLIPBOARD</span>
+    </div>
+
+    <!-- Script Entry -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+# Dependencies & Package Managers
+node_modules/
+.pnpm-store/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# IDEs & System Files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.DS_Store
+Thumbs.db
+
+# Build & Temporary Files
+dist/
+build/
+.cache/
+tmp/
+*.log

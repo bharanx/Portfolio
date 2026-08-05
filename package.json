@@ -1,0 +1,23 @@
+{
+  "name": "bharanidharan-portfolio",
+  "version": "1.0.0",
+  "description": "Cybersecurity & Cloud Security Engineering Portfolio of Bharanidharan S",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve ./",
+    "start": "npx serve ./",
+    "preview": "npx serve ./"
+  },
+  "keywords": [
+    "cybersecurity",
+    "portfolio",
+    "supply-chain-security",
+    "network-security",
+    "intrusion-detection",
+    "vanilla-js",
+    "brutalist-design"
+  ],
+  "author": "Bharanidharan S <bharanibd2007@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/bharanx/Portfolio"
+}

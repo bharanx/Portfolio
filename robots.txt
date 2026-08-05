@@ -1,0 +1,5 @@
+# Robots.txt for Bharanidharan S Portfolio
+User-agent: *
+Allow: /
+
+Sitemap: https://bharanx.github.io/sitemap.xml
